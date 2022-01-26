@@ -1,6 +1,6 @@
 /*
 	forma de invocación de método call:
-	def ejecucion = load 'script.groovy'
+	def ejecucion = load 'maven.groovy'
 	ejecucion.call()
 */
 
@@ -25,8 +25,7 @@ def call(){
     STAGE = env.STAGE_NAME
 		bat "start /min mvnw.cmd spring-boot:run &"
 		sleep 20
-  }
-  
+  }  
 }
 
 return this;

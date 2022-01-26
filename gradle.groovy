@@ -1,6 +1,6 @@
 /*
 	forma de invocación de método call:
-	def ejecucion = load 'script.groovy'
+	def ejecucion = load 'gradle.groovy'
 	ejecucion.call()
 */
 
@@ -31,7 +31,5 @@ def call(){
 		STAGE = env.STAGE_NAME
 		println "Stage: ${env.STAGE_NAME}"
 	}
-
 }
-
 return this;
