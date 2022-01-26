@@ -8,9 +8,8 @@ def call(){
   
 	stage('Build & Unit Test'){
 		STAGE = env.STAGE_NAME
-		sh 'env'
 		println "Stage: ${env.STAGE_NAME}"
-		bat "./gradlew.cmd clean build"   
+		bat "./gradlew.bat clean build"   
 	}
 
 	stage('Sonar'){
